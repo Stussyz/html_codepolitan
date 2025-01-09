@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+</head>
+<body>
+    <!-- contoh table 1: -->
+    <table>
+        <!-- penggunaan semantic element thead -->
+        <thead>
+            <tr>
+                <th>Nama Mobil</th>
+                <th>Negara Produksi</th>
+                <th>Harga Rilis</th>
+            </tr>
+        </thead>
+        <!-- sematic element tbody -->
+        <tbody>
+            <tr>
+                <td>Civic Koper</td>
+                <td>Japan</td>
+                <td>10.000.000</td>
+            </tr>
+            <tr>
+                <td>Civic Excellent</td>
+                <td>Japan</td>
+                <td>15.000.000</td>
+            </tr>
+        </tbody>
+        <!-- semantic element tfoot -->
+        <tfoot>
+            <tr>
+                <th>Nama Mobil</th>
+                <th>Negara Produksi</th>
+                <th>Harga Rilis</th>
+            </tr>
+        </tfoot>
+    </table>
+<hr>
+    <!-- contoh table 2: -->
+     <!-- attribute border untuk memberikan garis diseluruh sel dengan ketebalan "1" -->
+     <table border="1">
+        <thead>
+            <tr>
+                <!-- rowspan untuk merging table baris  -->
+                <th rowspan="2">Tahun</th>
+                <!-- colspan untuk merging table baris -->
+                <th colspan="3">Civic 90's Gen</th>
+            </tr>
+            <tr>
+                <th>Populasi</th>
+                <th>Nama</th>
+                <th>Negara Pembuat</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data 1 -->
+            <tr>
+                <td rowspan="3">1996</td>
+                <td rowspan="3">Civic Ferio</td>
+                <td>Ferio Sedan(EK)</td>
+                <td>Jepang</td>
+            </tr>
+
+            <tr>
+                <td>Ferio Hatchback (EK)</td>
+                <td>Jepang</td>
+            </tr>
+
+            <tr>
+                <td>Ferio Coupe (EK)</td>
+                <td>Jepang</td>
+            </tr>
+            <!-- Data 2 -->
+            <tr>
+                <td rowspan="3">1993</td>
+                <td rowspan="3">Civic Genio</td>
+                <td>Genio Sedan(EG)</td>
+                <td>Jepang</td>
+            </tr>
+
+            <tr>
+                <td>Estilo (EG)</td>
+                <td>Jepang</td>
+            </tr>
+
+            <tr>
+                <td>Genio Coupe (EG)</td>
+                <td>Jepang</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>

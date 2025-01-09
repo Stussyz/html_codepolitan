@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir Registrasi Anggota Komunitas</h1>
+    <form action="/regist" method="post">
+    <!-- label element -->
+    <!-- nama -->
+    <div>
+        <label for="name">Nama</label>
+        <input type="text" name="name" placeholder=" Masukkan Nama" id="name">
+    </div>
+
+    <!-- email -->
+    <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder=" Masukkan E-mail" id="email">
+    </div>
+
+    <!-- password -->
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Masukkan Kata Sandi" id="password">
+    </div>
+
+    <!-- usia -->
+    <div>
+        <label for="age">Usia</label>
+        <input type="number" name="usia" placeholder="Masukkan Usia" id="age">
+    </div>
+
+    <!-- warna mobil -->
+    <div>
+        <label for="color">Warna Mobil</label>
+        <input type="color" name="color" id="color">
+    </div>
+
+    <!-- radio button: pekerjaan -->
+    <div>
+        <label for="">Pekerjaan</label>
+        <input type="radio" name="job" id="" value="pns"> <label for="pns">PNS</label>
+        <input type="radio" name="job" id="" value="swasta"> <label for="swasta">SWASTA</label>
+    </div>
+
+    <!-- dropdown button: status -->
+    <div>
+    <label for="status">Status</label>
+    <select name="status" id="status">
+        <option value="M" selected>menikah</option>
+        <option value="P">pacaran</option>
+        <option value="L">lajang</option>
+    </select>
+    </div>
+
+    <!-- checkbox: data sesuai -->
+    <div>
+        <label for="term">Data Sesuai?</label>
+        <input type="checkbox" name="term" id="term" value="benar">
+    </div>
+
+    <!-- text area: catatan -->
+    <div>
+        <p>
+            <label for="bio">Bio</label>
+        </p>
+        <textarea name="bio" id="bio" cols="50" rows="5"></textarea>
+    </div>
+        
+    <hr>
+
+    <h1>Validasi</h1>
+    <form action="valid">
+        <input type="text" name="input" required minlength="3" maxlength="5">
+        <input type="number" name="number" id="number" min="2" max="5">
+        <!-- submit button -->
+        <button type="submit">Kirim</button>
+    </form>
+    </form>
+</body>
+</html>
